@@ -1,8 +1,8 @@
 .home-hero {
-  height: 430px;
+  height: 600px;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.35)),
-    url("home-hero.png");
+    url("home/hero.png");
   background-size: cover;
   background-position: center;
   border: 3px solid #b47b55;
@@ -49,12 +49,15 @@
   overflow: hidden;
   text-align: center;
   height: 100%;
+  max-width: 360px;
+  margin: 0 auto;
   padding-bottom: 15px;
 }
 
 .home-card img {
-  width: 100%;
+  width: calc(100% - 20px);
   height: 145px;
+  margin: 10px;
   object-fit: cover;
 }
 
@@ -102,7 +105,7 @@ footer {
 
 @media (max-width: 768px) {
   .home-hero {
-    height: 350px;
+    height: 480px;
     padding: 20px;
   }
 
@@ -129,4 +132,198 @@ body {
 }
 .navbar {
   font-size: 21px;
+}
+
+.student-hero {
+
+  height: 400px;
+
+  background-image:
+
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.35)),
+
+    url("student-life/hero.jpeg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  border: 3px solid #b47b55;
+
+  border-radius: 5px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 40px;
+
+  color: white;
+
+}
+
+.student-hero-text h1 {
+
+  font-size: 60px;
+
+  font-weight: normal;
+
+  margin-bottom: 10px;
+
+}
+
+.student-hero-text p {
+
+  font-size: 22px;
+
+}
+
+.student-intro {
+
+  background-color: white;
+
+  padding: 35px;
+
+  text-align: center;
+
+}
+
+.student-intro h2 {
+
+  font-size: 32px;
+
+  margin-bottom: 10px;
+
+}
+
+.student-intro p {
+
+  max-width: 700px;
+
+  margin: auto;
+
+  font-size: 17px;
+
+}
+
+.student-cards {
+
+  background-color: #08777c;
+
+  padding: 30px;
+
+}
+
+.student-card {
+
+  background-color: #000;
+
+  border: 3px solid #b47b55;
+
+  border-radius: 4px;
+
+  overflow: hidden;
+
+  height: 100%;
+
+  text-align: center;
+
+  padding-bottom: 15px;
+
+}
+
+.student-card img {
+
+  width: calc(100% - 20px);
+
+  height: 180px;
+
+  margin: 10px;
+
+  object-fit: cover;
+
+}
+
+.student-card-text {
+
+  padding: 5px 15px;
+
+}
+
+.student-card h3 {
+
+  color: white;
+
+  font-size: 21px;
+
+  margin-top: 5px;
+
+}
+
+.student-card p {
+
+  color: white;
+
+  font-size: 14px;
+
+}
+
+.student-bottom {
+
+  background-color: white;
+
+  padding: 40px;
+
+  text-align: center;
+
+}
+
+.student-bottom h2 {
+
+  font-size: 32px;
+
+}
+
+.student-bottom p {
+
+  max-width: 650px;
+
+  margin: 10px auto 20px;
+
+}
+
+@media (max-width: 768px) {
+
+  .student-hero {
+
+    height: 350px;
+
+    padding: 20px;
+
+  }
+
+  .student-hero-text h1 {
+
+    font-size: 45px;
+
+  }
+
+  .student-hero-text p {
+
+    font-size: 18px;
+
+  }
+
+  .student-cards {
+
+    padding: 20px;
+
+  }
+
+  .student-card img {
+
+    height: 160px;
+
+  }
+
 }
