@@ -25,142 +25,388 @@
 
             <div class="collapse navbar-collapse nav" id="nav">
                 <ul class="navbar-nav ms-auto">
+
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link active" href="student-life.html">Student Life</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="sports.html">Sports</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="programs.html">Programs</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="admissions.html">Admissions</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="alumni.html">Alumni</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
+
                 </ul>
             </div>
         </div>
     </nav>
 
+
     <section class="student-hero">
+
         <div class="student-hero-text">
             <h1>Student Life</h1>
             <p>Get involved. Make friends. Find your home.</p>
         </div>
+
     </section>
 
+
     <section class="student-intro">
+
         <h2>Life at Coastal Carolina</h2>
+
         <p>
-            College is more than just classes. At Coastal Carolina, students
-            have opportunities to get involved, meet new people, and make
+            College is more than just classes. At Coastal Carolina,
+            students can get involved, meet new people, and make
             memories both on and off campus.
         </p>
+
     </section>
+
 
     <section class="student-cards">
 
         <div class="row g-4">
 
+
+            <!-- Clubs -->
+
             <div class="col-12 col-md-6 col-lg-4">
+
                 <div class="student-card">
+
                     <img src="student-life/clubs.jpeg" alt="Clubs and Organizations">
-                    <div class="student-card-text">
-                        <h3>Clubs & Organizations</h3>
-                        <p>
-                            Find people who share your interests and get involved
-                            in organizations across campus.
-                        </p>
-                    </div>
+
+                    <h3>Clubs & Organizations</h3>
+
+                    <p>
+                        Find people who share your interests.
+                    </p>
+
+                    <button class="learn-button" onclick="openPopup('clubsPopup')">
+                        Learn More
+                    </button>
+
                 </div>
+
             </div>
 
+
+            <!-- Athletics -->
+
             <div class="col-12 col-md-6 col-lg-4">
+
                 <div class="student-card">
+
                     <img src="student-life/athletics.jpeg" alt="Athletics">
-                    <div class="student-card-text">
-                        <h3>Athletics</h3>
-                        <p>
-                            Cheer on the Chanticleers and be part of the
-                            excitement on game day.
-                        </p>
-                    </div>
+
+                    <h3>Athletics</h3>
+
+                    <p>
+                        Cheer on the Chanticleers.
+                    </p>
+
+                    <button class="learn-button" onclick="openPopup('athleticsPopup')">
+                        Learn More
+                    </button>
+
                 </div>
+
             </div>
 
+
+            <!-- Housing -->
+
             <div class="col-12 col-md-6 col-lg-4">
+
                 <div class="student-card">
+
                     <img src="student-life/housing.jpeg" alt="On Campus Housing">
-                    <div class="student-card-text">
-                        <h3>On-Campus Housing</h3>
-                        <p>
-                            Live close to your classes, activities, and the
-                            people who make campus feel like home.
-                        </p>
-                    </div>
+
+                    <h3>On-Campus Housing</h3>
+
+                    <p>
+                        Live close to classes and campus activities.
+                    </p>
+
+                    <button class="learn-button" onclick="openPopup('housingPopup')">
+                        Learn More
+                    </button>
+
                 </div>
+
             </div>
 
+
+            <!-- Events -->
+
             <div class="col-12 col-md-6 col-lg-4">
+
                 <div class="student-card">
+
                     <img src="student-life/events.jpeg" alt="Campus Events">
-                    <div class="student-card-text">
-                        <h3>Events & Traditions</h3>
-                        <p>
-                            Take part in campus events, traditions, and activities
-                            throughout the year.
-                        </p>
-                    </div>
+
+                    <h3>Events & Traditions</h3>
+
+                    <p>
+                        Take part in events throughout the year.
+                    </p>
+
+                    <button class="learn-button" onclick="openPopup('eventsPopup')">
+                        Learn More
+                    </button>
+
                 </div>
+
             </div>
 
+
+            <!-- Campus -->
+
             <div class="col-12 col-md-6 col-lg-4">
+
                 <div class="student-card">
+
                     <img src="student-life/campus.jpeg" alt="Coastal Carolina Campus">
-                    <div class="student-card-text">
-                        <h3>Beautiful Campus</h3>
-                        <p>
-                            Enjoy a beautiful campus with places to study,
-                            relax, and spend time with friends.
-                        </p>
-                    </div>
+
+                    <h3>Beautiful Campus</h3>
+
+                    <p>
+                        Enjoy a beautiful place to learn and relax.
+                    </p>
+
+                    <button class="learn-button" onclick="openPopup('campusPopup')">
+                        Learn More
+                    </button>
+
                 </div>
+
             </div>
 
+
+            <!-- Greek Life -->
+
             <div class="col-12 col-md-6 col-lg-4">
+
                 <div class="student-card">
+
                     <img src="student-life/greek-life.jpeg" alt="Greek Life">
-                    <div class="student-card-text">
-                        <h3>Greek Life</h3>
-                        <p>
-                            Meet new people and build friendships through
-                            Coastal Carolina's Greek organizations.
-                        </p>
-                    </div>
+
+                    <h3>Greek Life</h3>
+
+                    <p>
+                        Meet new people and build friendships.
+                    </p>
+
+                    <button class="learn-button" onclick="openPopup('greekPopup')">
+                        Learn More
+                    </button>
+
                 </div>
+
             </div>
 
         </div>
 
     </section>
 
+
+    <!-- CLUBS POPUP -->
+
+    <div class="popup" id="clubsPopup">
+
+        <div class="popup-content">
+
+            <button class="close-button" onclick="closePopup('clubsPopup')">
+                &times;
+            </button>
+
+            <h2>Clubs & Organizations</h2>
+
+            <p>
+                Coastal Carolina has many student organizations
+                that allow students to meet new people, explore
+                interests, and become involved on campus.
+            </p>
+
+            <button class="learn-button" onclick="closePopup('clubsPopup')">
+                Close
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ATHLETICS POPUP -->
+
+    <div class="popup" id="athleticsPopup">
+
+        <div class="popup-content">
+
+            <button class="close-button" onclick="closePopup('athleticsPopup')">
+                &times;
+            </button>
+
+            <h2>Athletics</h2>
+
+            <p>
+                Students can support the Chanticleers by attending
+                games and showing their school spirit. Coastal
+                Carolina competes in NCAA Division I athletics.
+            </p>
+
+            <button class="learn-button" onclick="closePopup('athleticsPopup')">
+                Close
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- HOUSING POPUP -->
+
+    <div class="popup" id="housingPopup">
+
+        <div class="popup-content">
+
+            <button class="close-button" onclick="closePopup('housingPopup')">
+                &times;
+            </button>
+
+            <h2>On-Campus Housing</h2>
+
+            <p>
+                Living on campus gives students the opportunity
+                to be close to classes, dining, activities, and
+                other students.
+            </p>
+
+            <button class="learn-button" onclick="closePopup('housingPopup')">
+                Close
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- EVENTS POPUP -->
+
+    <div class="popup" id="eventsPopup">
+
+        <div class="popup-content">
+
+            <button class="close-button" onclick="closePopup('eventsPopup')">
+                &times;
+            </button>
+
+            <h2>Events & Traditions</h2>
+
+            <p>
+                There are campus events and traditions throughout
+                the year that give students opportunities to get
+                involved and spend time with friends.
+            </p>
+
+            <button class="learn-button" onclick="closePopup('eventsPopup')">
+                Close
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- CAMPUS POPUP -->
+
+    <div class="popup" id="campusPopup">
+
+        <div class="popup-content">
+
+            <button class="close-button" onclick="closePopup('campusPopup')">
+                &times;
+            </button>
+
+            <h2>Beautiful Campus</h2>
+
+            <p>
+                Coastal Carolina's campus is located in Conway,
+                South Carolina, close to the Grand Strand and
+                Myrtle Beach.
+            </p>
+
+            <button class="learn-button" onclick="closePopup('campusPopup')">
+                Close
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- GREEK LIFE POPUP -->
+
+    <div class="popup" id="greekPopup">
+
+        <div class="popup-content">
+
+            <button class="close-button" onclick="closePopup('greekPopup')">
+                &times;
+            </button>
+
+            <h2>Greek Life</h2>
+
+            <p>
+                Greek organizations give students another way
+                to meet people, become involved, and participate
+                in campus activities.
+            </p>
+
+            <button class="learn-button" onclick="closePopup('greekPopup')">
+                Close
+            </button>
+
+        </div>
+
+    </div>
+
+
     <section class="student-bottom">
+
         <h2>Find Your Place at CCU</h2>
+
         <p>
-            Whether you're interested in clubs, sports, campus events, or
-            meeting new people, there are plenty of ways to get involved.
+            There are many ways to get involved and make your
+            college experience your own.
         </p>
-        <a href="contact.html" class="home-button">Learn More</a>
+
+        <a href="contact.html" class="home-button">
+            Learn More
+        </a>
+
     </section>
+
 
     <footer>
         <div>
@@ -173,7 +419,10 @@
 
 </div>
 
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
 
 </body>
 </html>
