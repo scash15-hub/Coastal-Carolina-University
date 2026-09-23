@@ -639,3 +639,172 @@ body {
   }
 
 }
+
+/* PROGRAMS PAGE */
+
+.programs-hero {
+  height: 500px;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4)),
+    url("programs/hero.jpeg");
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #b47b55;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  color: white;
+}
+
+.programs-hero-text h1 {
+  font-size: 55px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.programs-hero-text p {
+  font-size: 22px;
+}
+
+.programs-section {
+  background-color: #08777c;
+  padding: 40px 30px;
+}
+
+.programs-section h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.programs-intro {
+  color: white;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.program-card {
+  background-color: #000;
+  border: 3px solid #b47b55;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+.program-card img {
+  width: calc(100% - 20px);
+  height: 170px;
+  margin: 10px;
+  object-fit: cover;
+}
+
+.program-card h3 {
+  color: white;
+  font-size: 21px;
+  margin-top: 10px;
+}
+
+.program-card p {
+  color: white;
+  font-size: 14px;
+  margin: 10px 20px 15px;
+}
+
+.learn-button {
+  background-color: #c59a6d;
+  border: 2px solid #6d4b35;
+  color: #111;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.learn-button:hover {
+  background-color: white;
+}
+
+/* POPUPS */
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.popup-content {
+  background-color: white;
+  width: 90%;
+  max-width: 550px;
+  padding: 35px;
+  border: 4px solid #b47b55;
+  border-radius: 7px;
+  text-align: center;
+  position: relative;
+}
+
+.popup-content h2 {
+  color: #08777c;
+  margin-bottom: 15px;
+}
+
+.popup-content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.close-button {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  border: none;
+  background: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+
+  .programs-hero {
+    height: 400px;
+    padding: 20px;
+  }
+
+  .programs-hero-text h1 {
+    font-size: 40px;
+  }
+
+  .programs-hero-text p {
+    font-size: 18px;
+  }
+
+  .programs-section {
+    padding: 30px 15px;
+  }
+
+  .program-card img {
+    height: 160px;
+  }
+
+  .program-apply {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  .program-apply img {
+    height: 200px;
+  }
+
+}
