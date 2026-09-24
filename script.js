@@ -10,18 +10,10 @@ function closePopup(popupId) {
 
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+function submitForm(event) {
 
-    const carouselElement = document.getElementById("sportsCarousel");
+    event.preventDefault();
 
-    if (carouselElement && window.bootstrap) {
-        const carousel = bootstrap.Carousel.getOrCreateInstance(carouselElement, {
-            interval: 3000,
-            pause: false,
-            ride: "carousel"
-        });
+    alert("Thank you for contacting Coastal Carolina!");
 
-        carousel.cycle();
-    }
-
-});
+}
