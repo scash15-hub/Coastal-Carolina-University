@@ -132,15 +132,16 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
 .logo {
   height: 50px;
 }
+
 .navbar {
   font-size: 21px;
 }
 
 .student-hero {
-
   height: 400px;
 
   background-image:
@@ -162,63 +163,49 @@ body {
   padding: 40px;
 
   color: white;
-
 }
 
 .student-hero-text h1 {
-
   font-size: 60px;
 
   font-weight: normal;
 
   margin-bottom: 10px;
-
 }
 
 .student-hero-text p {
-
   font-size: 22px;
-
 }
 
 .student-intro {
-
   background-color: white;
 
   padding: 35px;
 
   text-align: center;
-
 }
 
 .student-intro h2 {
-
   font-size: 32px;
 
   margin-bottom: 10px;
-
 }
 
 .student-intro p {
-
   max-width: 700px;
 
   margin: auto;
 
   font-size: 17px;
-
 }
 
 .student-cards {
-
   background-color: #08777c;
 
   padding: 30px;
-
 }
 
 .student-card {
-
   background-color: #000;
 
   border: 3px solid #b47b55;
@@ -232,11 +219,9 @@ body {
   text-align: center;
 
   padding-bottom: 20px;
-
 }
 
 .student-card img {
-
   width: calc(100% - 20px);
 
   height: 180px;
@@ -244,31 +229,25 @@ body {
   margin: 10px;
 
   object-fit: cover;
-
 }
 
 .student-card h3 {
-
   color: white;
 
   font-size: 21px;
 
   margin-top: 5px;
-
 }
 
 .student-card p {
-
   color: white;
 
   font-size: 14px;
 
   margin: 8px 15px;
-
 }
 
 .learn-button {
-
   background-color: #c59a6d;
 
   border: 2px solid #6d4b35;
@@ -280,44 +259,33 @@ body {
   border-radius: 4px;
 
   font-family: inherit;
-
 }
 
 .learn-button:hover {
-
   background-color: white;
-
 }
 
 .student-bottom {
-
   background-color: white;
 
   padding: 40px;
 
   text-align: center;
-
 }
 
 .student-bottom h2 {
-
   font-size: 32px;
-
 }
 
 .student-bottom p {
-
   max-width: 650px;
 
   margin: 10px auto 20px;
-
 }
-
 
 /* POPUPS */
 
 .popup {
-
   display: none;
 
   position: fixed;
@@ -339,11 +307,9 @@ body {
   justify-content: center;
 
   padding: 20px;
-
 }
 
 .popup-content {
-
   background-color: white;
 
   width: 90%;
@@ -359,27 +325,21 @@ body {
   text-align: center;
 
   position: relative;
-
 }
 
 .popup-content h2 {
-
   color: #08777c;
 
   margin-bottom: 15px;
-
 }
 
 .popup-content p {
-
   font-size: 16px;
 
   line-height: 1.6;
-
 }
 
 .close-button {
-
   position: absolute;
 
   right: 15px;
@@ -393,43 +353,50 @@ body {
   font-size: 30px;
 
   cursor: pointer;
-
 }
 
 @media (max-width: 768px) {
-
   .student-hero {
-
     height: 350px;
 
     padding: 20px;
-
   }
 
   .student-hero-text h1 {
-
     font-size: 45px;
-
   }
 
   .student-hero-text p {
-
     font-size: 18px;
-
   }
 
   .student-cards {
-
     padding: 20px;
-
   }
 
   .student-card img {
-
     height: 160px;
-
   }
+}
 
+.more-button {
+  background-color: #c59a6d;
+  border: 2px solid #6d4b35;
+  color: #111;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.more-button:hover {
+  background-color: white;
+}
+
+.popup-content .more-button,
+.popup-content .learn-button {
+  display: block;
+  width: fit-content;
+  margin: 10px auto 0;
 }
 
 /* SPORTS PAGE */
@@ -565,7 +532,6 @@ body {
   background-color: white;
 }
 
-
 /* POPUPS */
 
 .popup {
@@ -613,9 +579,7 @@ body {
   cursor: pointer;
 }
 
-
 @media (max-width: 768px) {
-
   .sports-hero {
     height: 400px;
     padding: 20px;
@@ -640,7 +604,6 @@ body {
   .sports-card img {
     height: 180px;
   }
-
 }
 
 /* PROGRAMS PAGE */
@@ -777,9 +740,7 @@ body {
   cursor: pointer;
 }
 
-
 @media (max-width: 768px) {
-
   .programs-hero {
     height: 400px;
     padding: 20px;
@@ -809,7 +770,6 @@ body {
   .program-apply img {
     height: 200px;
   }
-
 }
 
 /* ADMISSIONS PAGE */
@@ -839,7 +799,6 @@ body {
 }
 
 @media (max-width: 768px) {
-
   .admissions-hero {
     height: 350px;
     padding: 20px;
@@ -852,9 +811,7 @@ body {
   .admissions-hero-text p {
     font-size: 18px;
   }
-
 }
-
 
 .apply-section {
   background-color: white;
@@ -947,7 +904,6 @@ body {
   margin: 0 auto 20px;
 }
 
-
 /* POPUPS */
 
 .popup {
@@ -1001,9 +957,7 @@ body {
   margin-top: 10px;
 }
 
-
 @media (max-width: 768px) {
-
   .apply-section {
     padding: 20px 15px;
   }
@@ -1028,7 +982,6 @@ body {
   .financial-aid-section img {
     height: 200px;
   }
-
 }
 
 /* ALUMNI PAGE */
@@ -1130,7 +1083,6 @@ body {
   margin: 0 auto 20px;
 }
 
-
 /* POPUPS */
 
 .popup {
@@ -1183,9 +1135,7 @@ body {
   margin-top: 10px;
 }
 
-
 @media (max-width: 768px) {
-
   .alumni-hero {
     height: 350px;
     padding: 20px;
@@ -1211,7 +1161,6 @@ body {
   .alumni-community img {
     height: 200px;
   }
-
 }
 
 /* CONTACT PAGE */
@@ -1321,9 +1270,7 @@ body {
   border-radius: 5px;
 }
 
-
 @media (max-width: 768px) {
-
   .contact-hero {
     height: 350px;
     padding: 20px;
@@ -1348,5 +1295,4 @@ body {
   .contact-map iframe {
     width: 100%;
   }
-
 }

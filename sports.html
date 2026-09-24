@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,543 +12,358 @@
 </head>
 
 <body>
+    <div class="page">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="logo.png" alt="Coastal Carolina University" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav" id="nav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="student-life.html">Student Life</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="sports.html">Sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="programs.html">Programs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admissions.html">Admissions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="alumni.html">Alumni</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-<div class="page">
 
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+        <!-- HERO -->
+        <section class="sports-hero">
+            <div class="sports-hero-text">
+                <h1>Chanticleer Athletics</h1>
+                <p>Get involved, cheer on the Chants, and experience Coastal Carolina sports.</p>
+            </div>
+        </section>
 
-            <a class="navbar-brand" href="index.html">
-                <img src="logo.png" alt="Coastal Carolina University" class="logo">
+        <!-- SPORTS -->
+        <section class="sports-section">
+            <div class="row g-4">
+
+                <!-- FOOTBALL -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sports-card">
+                        <img src="sports/football.jpeg" alt="Football">
+                        <h3>Football</h3>
+                        <button class="learn-button" onclick="openPopup('footballPopup')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BASEBALL -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sports-card">
+                        <img src="sports/baseball.jpeg" alt="Baseball">
+                        <h3>Baseball</h3>
+                        <button class="learn-button" onclick="openPopup('baseballPopup')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- SOCCER -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sports-card">
+                        <img src="sports/soccer.jpeg" alt="Soccer">
+                        <h3>Soccer</h3>
+                        <button class="learn-button" onclick="openPopup('soccerPopup')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- VOLLEYBALL -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sports-card">
+                        <img src="sports/volleyball.jpeg" alt="Volleyball">
+                        <h3>Volleyball</h3>
+                        <button class="learn-button" onclick="openPopup('volleyballPopup')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BASKETBALL -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sports-card">
+                        <img src="sports/basketball.jpeg" alt="Basketball">
+                        <h3>Basketball</h3>
+                        <button class="learn-button" onclick="openPopup('basketballPopup')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- SOFTBALL -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sports-card">
+                        <img src="sports/softball.jpeg" alt="Softball">
+                        <h3>Softball</h3>
+                        <button class="learn-button" onclick="openPopup('softballPopup')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- GOLF -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sports-card">
+                        <img src="sports/golf.jpeg" alt="Golf">
+                        <h3>Golf</h3>
+                        <button class="learn-button" onclick="openPopup('golfPopup')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- LACROSSE -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sports-card">
+                        <img src="sports/lacrosse.jpeg" alt="Lacrosse">
+                        <h3>Lacrosse</h3>
+                        <button class="learn-button" onclick="openPopup('lacrossePopup')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- HOCKEY -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="sports-card">
+                        <img src="sports/hockey.jpeg" alt="Hockey">
+                        <h3>Hockey</h3>
+                        <button class="learn-button" onclick="openPopup('hockeyPopup')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SCHEDULE -->
+        <section class="sports-schedule">
+            <h2>Sports Schedule</h2>
+            <p>Check the Coastal Carolina Athletics calendar for upcoming games, events, dates, and times.</p>
+            <a href="https://goccusports.com/calendar" target="_blank" class="schedule-button">
+                View Full Schedule
             </a>
+        </section>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse nav" id="nav">
-                <ul class="navbar-nav ms-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="student-life.html">Student Life</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="sports.html">Sports</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="programs.html">Programs</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="admissions.html">Admissions</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="alumni.html">Alumni</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-
-                </ul>
+        <!-- FOOTBALL POPUP -->
+        <div class="popup" id="footballPopup">
+            <div class="popup-content">
+                <button class="close-button" onclick="closePopup('footballPopup')">
+                    &times;
+                </button>
+                <h2>Football</h2>
+                <p>Coastal Carolina University's football team, the Chanticleers, competes in NCAA Division I Football
+                    Bowl Subdivision (FBS) as a member of the Sun Belt Conference.</p>
+                <button class="learn-button" onclick="closePopup('footballPopup')">
+                    Close
+                </button>
             </div>
         </div>
-    </nav>
 
-
-    <!-- HERO -->
-
-    <section class="sports-hero">
-        <div class="sports-hero-text">
-            <h1>Chanticleer Athletics</h1>
-            <p>Get involved, cheer on the Chants, and experience Coastal Carolina sports.</p>
-        </div>
-    </section>
-
-
-    <!-- SPORTS -->
-
-    <section class="sports-section">
-
-        <div class="row g-4">
-
-            <!-- FOOTBALL -->
-
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="sports-card">
-
-                    <img src="sports/football.jpeg" alt="Football">
-
-                    <h3>Football</h3>
-
-                    <button class="learn-button" onclick="openPopup('footballPopup')">
-                        Learn More
-                    </button>
-
-                </div>
+        <!-- BASEBALL POPUP -->
+        <div class="popup" id="baseballPopup">
+            <div class="popup-content">
+                <button class="close-button" onclick="closePopup('baseballPopup')">
+                    &times;
+                </button>
+                <h2>Baseball</h2>
+                <p>Coastal Carolina University's baseball program is a prominent NCAA Division I powerhouse competing in
+                    the Sun Belt Conference out of Conway, South Carolina.</p>
+                <button class="learn-button" onclick="closePopup('baseballPopup')">
+                    Close
+                </button>
             </div>
-
-
-            <!-- BASEBALL -->
-
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="sports-card">
-
-                    <img src="sports/baseball.jpeg" alt="Baseball">
-
-                    <h3>Baseball</h3>
-
-                    <button class="learn-button" onclick="openPopup('baseballPopup')">
-                        Learn More
-                    </button>
-
-                </div>
-            </div>
-
-
-            <!-- SOCCER -->
-
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="sports-card">
-
-                    <img src="sports/soccer.jpeg" alt="Soccer">
-
-                    <h3>Soccer</h3>
-
-                    <button class="learn-button" onclick="openPopup('soccerPopup')">
-                        Learn More
-                    </button>
-
-                </div>
-            </div>
-
-
-            <!-- VOLLEYBALL -->
-
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="sports-card">
-
-                    <img src="sports/volleyball.jpeg" alt="Volleyball">
-
-                    <h3>Volleyball</h3>
-
-                    <button class="learn-button" onclick="openPopup('volleyballPopup')">
-                        Learn More
-                    </button>
-
-                </div>
-            </div>
-
-
-            <!-- BASKETBALL -->
-
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="sports-card">
-
-                    <img src="sports/basketball.jpeg" alt="Basketball">
-
-                    <h3>Basketball</h3>
-
-                    <button class="learn-button" onclick="openPopup('basketballPopup')">
-                        Learn More
-                    </button>
-
-                </div>
-            </div>
-
-
-            <!-- SOFTBALL -->
-
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="sports-card">
-
-                    <img src="sports/softball.jpeg" alt="Softball">
-
-                    <h3>Softball</h3>
-
-                    <button class="learn-button" onclick="openPopup('softballPopup')">
-                        Learn More
-                    </button>
-
-                </div>
-            </div>
-
-
-            <!-- GOLF -->
-
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="sports-card">
-
-                    <img src="sports/golf.jpeg" alt="Golf">
-
-                    <h3>Golf</h3>
-
-                    <button class="learn-button" onclick="openPopup('golfPopup')">
-                        Learn More
-                    </button>
-
-                </div>
-            </div>
-
-
-            <!-- LACROSSE -->
-
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="sports-card">
-
-                    <img src="sports/lacrosse.jpeg" alt="Lacrosse">
-
-                    <h3>Lacrosse</h3>
-
-                    <button class="learn-button" onclick="openPopup('lacrossePopup')">
-                        Learn More
-                    </button>
-
-                </div>
-            </div>
-
-
-            <!-- HOCKEY -->
-
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="sports-card">
-
-                    <img src="sports/hockey.jpeg" alt="Hockey">
-
-                    <h3>Hockey</h3>
-
-                    <button class="learn-button" onclick="openPopup('hockeyPopup')">
-                        Learn More
-                    </button>
-
-                </div>
-            </div>
-
         </div>
 
-    </section>
-
-
-    <!-- SCHEDULE -->
-
-    <section class="sports-schedule">
-
-        <h2>Sports Schedule</h2>
-
-        <p>
-            Check the Coastal Carolina Athletics calendar for upcoming games,
-            events, dates, and times.
-        </p>
-
-        <a href="https://goccusports.com/calendar" target="_blank" class="schedule-button">
-            View Full Schedule
-        </a>
-
-    </section>
-
-
-    <!-- FOOTBALL POPUP -->
-
-    <div class="popup" id="footballPopup">
-
-        <div class="popup-content">
-
-            <button class="close-button" onclick="closePopup('footballPopup')">
-                &times;
-            </button>
-
-            <h2>Football</h2>
-
-            <p>
-                Coastal Carolina football plays its home games at Brooks Stadium.
-                Students can attend games and be part of the Chanticleer game day experience.
-            </p>
-
-            <button class="learn-button" onclick="closePopup('footballPopup')">
-                Close
-            </button>
-
+        <!-- SOCCER POPUP -->
+        <div class="popup" id="soccerPopup">
+            <div class="popup-content">
+                <button class="close-button" onclick="closePopup('soccerPopup')">
+                    &times;
+                </button>
+                <h2>Soccer</h2>
+                <p>Coastal Carolina University features active NCAA Division I men's and women's varsity soccer programs
+                    as well as competitive club soccer opportunities.</p>
+                <button class="learn-button" onclick="closePopup('soccerPopup')">
+                    Close
+                </button>
+            </div>
         </div>
 
+        <!-- VOLLEYBALL POPUP -->
+        <div class="popup" id="volleyballPopup">
+            <div class="popup-content">
+                <button class="close-button" onclick="closePopup('volleyballPopup')">
+                    &times;
+                </button>
+                <h2>Volleyball</h2>
+                <p>Coastal Carolina University fields competitive NCAA Division I women's indoor and beach volleyball
+                    teams that compete in the Sun Belt Conference.</p>
+                <button class="learn-button" onclick="closePopup('volleyballPopup')">
+                    Close
+                </button>
+            </div>
+        </div>
+
+        <!-- BASKETBALL POPUP -->
+        <div class="popup" id="basketballPopup">
+            <div class="popup-content">
+                <button class="close-button" onclick="closePopup('basketballPopup')">
+                    &times;
+                </button>
+                <h2>Basketball</h2>
+                <p>Coastal Carolina University fields NCAA Division I men's and women's basketball teams that compete in
+                    the Sun Belt Conference out of the HTC Center in Conway, South Carolina.</p>
+                <button class="learn-button" onclick="closePopup('basketballPopup')">
+                    Close
+                </button>
+            </div>
+        </div>
+
+        <!-- SOFTBALL POPUP -->
+        <div class="popup" id="softballPopup">
+            <div class="popup-content">
+                <button class="close-button" onclick="closePopup('softballPopup')">
+                    &times;
+                </button>
+                <h2>Softball</h2>
+                <p>The Coastal Carolina Chanticleers softball team represents Coastal Carolina University in NCAA
+                    Division I as part of the Sun Belt Conference.</p>
+                <button class="learn-button" onclick="closePopup('softballPopup')">
+                    Close
+                </button>
+            </div>
+        </div>
+
+        <!-- GOLF POPUP -->
+        <div class="popup" id="golfPopup">
+            <div class="popup-content">
+                <button class="close-button" onclick="closePopup('golfPopup')">
+                    &times;
+                </button>
+                <h2>Golf</h2>
+                <p>The General James Hackler Course at Coastal Carolina University is the Grand Strand area's only
+                    university-affiliated golf course, located adjacent to the main campus in Conway, South Carolina.</p>
+                <button class="learn-button" onclick="closePopup('golfPopup')">
+                    Close
+                </button>
+            </div>
+        </div>
+
+        <!-- LACROSSE POPUP -->
+        <div class="popup" id="lacrossePopup">
+            <div class="popup-content">
+                <button class="close-button" onclick="closePopup('lacrossePopup')">
+                    &times;
+                </button>
+                <h2>Lacrosse</h2>
+                <p>Coastal Carolina University features both an NCAA Division I women's varsity lacrosse program and
+                    active student-led men's and women's club lacrosse teams.</p>
+                <button class="learn-button" onclick="closePopup('lacrossePopup')">
+                    Close
+                </button>
+            </div>
+        </div>
+
+        <!-- HOCKEY POPUP -->
+        <div class="popup" id="hockeyPopup">
+            <div class="popup-content">
+                <button class="close-button" onclick="closePopup('hockeyPopup')">
+                    &times;
+                </button>
+                <h2>Hockey</h2>
+                <p>competitive men's club ice hockey team known as the Chanticleers (or the Chants) that competes in the
+                    Atlantic Coast Collegiate Hockey League (ACCHL).</p>
+                <button class="learn-button" onclick="closePopup('hockeyPopup')">
+                    Close
+                </button>
+            </div>
+        </div>
+
+        <!-- SPORTS CAROUSEL -->
+        <section class="sports-carousel">
+            <div id="sportsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="sports/1.jpeg" alt="Coastal Carolina sports">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="sports/2.jpeg" alt="Coastal Carolina sports">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="sports/3.jpeg" alt="Coastal Carolina sports">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="sports/4.jpeg" alt="Coastal Carolina sports">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="sports/5.jpeg" alt="Coastal Carolina sports">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="sports/6.jpeg" alt="Coastal Carolina sports">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="sports/7.jpeg" alt="Coastal Carolina sports">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#sportsCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#sportsCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <footer>
+            <div>
+                <strong>COASTAL CAROLINA</strong>
+            </div>
+            <p>Conway, South Carolina</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.62737917515!2d-79.01627072429447!3d33.79611937325441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89006d2992e43c5f%3A0x1357c9e22878ce79!2sCoastal%20Carolina%20University!5e0!3m2!1sen!2sus!4v1789730970987!5m2!1sen!2sus"
+                width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <p>Go Chants!</p>
+        </footer>
     </div>
 
 
-    <!-- BASEBALL POPUP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <div class="popup" id="baseballPopup">
-
-        <div class="popup-content">
-
-            <button class="close-button" onclick="closePopup('baseballPopup')">
-                &times;
-            </button>
-
-            <h2>Baseball</h2>
-
-            <p>
-                Coastal Carolina baseball gives students the chance to watch
-                college baseball and support the Chanticleers throughout the season.
-            </p>
-
-            <button class="learn-button" onclick="closePopup('baseballPopup')">
-                Close
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- SOCCER POPUP -->
-
-    <div class="popup" id="soccerPopup">
-
-        <div class="popup-content">
-
-            <button class="close-button" onclick="closePopup('soccerPopup')">
-                &times;
-            </button>
-
-            <h2>Soccer</h2>
-
-            <p>
-                Coastal Carolina soccer competes throughout the year and gives
-                students another way to support Chanticleer athletics.
-            </p>
-
-            <button class="learn-button" onclick="closePopup('soccerPopup')">
-                Close
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- VOLLEYBALL POPUP -->
-
-    <div class="popup" id="volleyballPopup">
-
-        <div class="popup-content">
-
-            <button class="close-button" onclick="closePopup('volleyballPopup')">
-                &times;
-            </button>
-
-            <h2>Volleyball</h2>
-
-            <p>
-                Cheer on Coastal Carolina volleyball during home matches
-                and follow the team throughout the season.
-            </p>
-
-            <button class="learn-button" onclick="closePopup('volleyballPopup')">
-                Close
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- BASKETBALL POPUP -->
-
-    <div class="popup" id="basketballPopup">
-
-        <div class="popup-content">
-
-            <button class="close-button" onclick="closePopup('basketballPopup')">
-                &times;
-            </button>
-
-            <h2>Basketball</h2>
-
-            <p>
-                Coastal Carolina basketball gives students the opportunity
-                to attend games and cheer on the Chanticleers.
-            </p>
-
-            <button class="learn-button" onclick="closePopup('basketballPopup')">
-                Close
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- SOFTBALL POPUP -->
-
-    <div class="popup" id="softballPopup">
-
-        <div class="popup-content">
-
-            <button class="close-button" onclick="closePopup('softballPopup')">
-                &times;
-            </button>
-
-            <h2>Softball</h2>
-
-            <p>
-                Follow Coastal Carolina softball during the season and
-                support the team at home games.
-            </p>
-
-            <button class="learn-button" onclick="closePopup('softballPopup')">
-                Close
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- GOLF POPUP -->
-
-    <div class="popup" id="golfPopup">
-
-        <div class="popup-content">
-
-            <button class="close-button" onclick="closePopup('golfPopup')">
-                &times;
-            </button>
-
-            <h2>Golf</h2>
-
-            <p>
-                Coastal Carolina golf provides students with a way to follow competitive play
-                and support the Chanticleers throughout the season on the course.
-            </p>
-
-            <button class="learn-button" onclick="closePopup('golfPopup')">
-                Close
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- LACROSSE POPUP -->
-
-    <div class="popup" id="lacrossePopup">
-
-        <div class="popup-content">
-
-            <button class="close-button" onclick="closePopup('lacrossePopup')">
-                &times;
-            </button>
-
-            <h2>Lacrosse</h2>
-
-            <p>
-                Coastal Carolina lacrosse gives students another exciting way to cheer on
-                the Chanticleers and enjoy the energy of college athletics.
-            </p>
-
-            <button class="learn-button" onclick="closePopup('lacrossePopup')">
-                Close
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- HOCKEY POPUP -->
-
-    <div class="popup" id="hockeyPopup">
-
-        <div class="popup-content">
-
-            <button class="close-button" onclick="closePopup('hockeyPopup')">
-                &times;
-            </button>
-
-            <h2>Hockey</h2>
-
-            <p>
-                Learn more about hockey and the opportunities to connect
-                with the hockey community around Coastal Carolina.
-            </p>
-
-            <button class="learn-button" onclick="closePopup('hockeyPopup')">
-                Close
-            </button>
-
-        </div>
-
-    </div>
-
-    <!-- SPORTS CAROUSEL -->
-
-    <section class="sports-carousel">
-
-        <div id="sportsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-
-            <div class="carousel-inner">
-
-                <div class="carousel-item active">
-                    <img src="sports/1.jpeg" alt="Coastal Carolina sports">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="sports/2.jpeg" alt="Coastal Carolina sports">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="sports/3.jpeg" alt="Coastal Carolina sports">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="sports/4.jpeg" alt="Coastal Carolina sports">
-                </div>
-                <div class="carousel-item">
-                    <img src="sports/5.jpeg" alt="Coastal Carolina sports">
-                </div>
-                <div class="carousel-item">
-                    <img src="sports/6.jpeg" alt="Coastal Carolina sports">
-                </div>
-                <div class="carousel-item">
-                    <img src="sports/7.jpeg" alt="Coastal Carolina sports">
-                </div>
-
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#sportsCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-
-            <button class="carousel-control-next" type="button" data-bs-target="#sportsCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-
-        </div>
-
-    </section>
-
-
-    <footer>
-        <div>
-            <strong>COASTAL CAROLINA</strong>
-        </div>
-        <p>Conway, South Carolina</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.62737917515!2d-79.01627072429447!3d33.79611937325441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89006d2992e43c5f%3A0x1357c9e22878ce79!2sCoastal%20Carolina%20University!5e0!3m2!1sen!2sus!4v1789730970987!5m2!1sen!2sus" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        <p>Go Chants!</p>
-    </footer>
-</div>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
+
 </html>
