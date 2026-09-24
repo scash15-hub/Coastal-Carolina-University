@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,510 +12,321 @@
 </head>
 
 <body>
+    <div class="page">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="logo.png" alt="Coastal Carolina University" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav" id="nav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="student-life.html">Student Life</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="sports.html">Sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="programs.html">Programs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admissions.html">Admissions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="alumni.html">Alumni</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-<div class="page">
+        <!-- HERO -->
+        <section class="programs-hero">
+            <div class="programs-hero-text">
+                <h1>Academic Programs</h1>
+            </div>
+        </section>
 
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+        <!-- PROGRAM CARDS -->
+        <section class="programs-section">
+            <h2>Explore Our Programs</h2>
+            <div class="row g-4">
 
-            <a class="navbar-brand" href="index.html">
-                <img src="logo.png" alt="Coastal Carolina University" class="logo">
-            </a>
+                <!-- BUSINESS -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="program-card">
+                        <img src="programs/business.jpeg" alt="Business">
+                        <h3>Business</h3>
+                        <button class="learn-button" onclick="openPopup('businessPopup')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse nav" id="nav">
+                <!-- EDUCATION -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="program-card">
+                        <img src="programs/education.jpeg" alt="Education">
+                        <h3>Education</h3>
+                        <button class="learn-button" onclick="openPopup('educationPopup')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
 
-                <ul class="navbar-nav ms-auto">
+                <!-- SCIENCE -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="program-card">
+                        <img src="programs/science.jpeg" alt="Science">
+                        <h3>Science & Mathematics</h3>
+                        <button class="learn-button" onclick="openPopup('sciencePopup')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
+                <!-- HEALTH -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="program-card">
+                        <img src="programs/health.jpeg" alt="Health and Human Services">
+                        <h3>Health & Human Services</h3>
+                        <button class="learn-button" onclick="openPopup('healthPopup')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="student-life.html">Student Life</a>
-                    </li>
+                <!-- COMPUTER SCIENCE -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="program-card">
+                        <img src="programs/computer-science.jpeg" alt="Computer Science">
+                        <h3>Computer Science</h3>
+                        <button class="learn-button" onclick="openPopup('computerPopup')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="sports.html">Sports</a>
-                    </li>
+                <!-- SPORTS MANAGEMENT -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="program-card">
+                        <img src="programs/sports-management.jpeg" alt="Sports Management">
+                        <h3>Recreation & Sport Management</h3>
+                        <button class="learn-button" onclick="openPopup('sportsManagementPopup')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" href="programs.html">Programs</a>
-                    </li>
+                <!-- ARTS -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="program-card">
+                        <img src="programs/arts.jpeg" alt="Arts and Humanities">
+                        <h3>Arts & Humanities</h3>
+                        <button class="learn-button" onclick="openPopup('artsPopup')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="admissions.html">Admissions</a>
-                    </li>
+                <!-- NURSING -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="program-card">
+                        <img src="programs/nursing.jpeg" alt="Nursing">
+                        <h3>Nursing & Healthcare</h3>
+                        <button class="learn-button" onclick="openPopup('nursingPopup')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="alumni.html">Alumni</a>
-                    </li>
+                <!-- FINANCING -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="program-card">
+                        <img src="programs/finance.jpeg" alt="Financing and Financial Aid">
+                        <h3>Financing </h3>
+                        <button class="learn-button" onclick="openPopup('financingPopup')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-
-                </ul>
-
+        <!-- BUSINESS POPUP -->
+        <div class="popup" id="businessPopup">
+            <div class="popup-content">
+                <button class="close-button" onclick="closePopup('businessPopup')">
+                    &times;
+                </button>
+                <h2>Business</h2>
+                <p>The business programs at Coastal Carolina University are housed within the E. Craig Wall Sr. College of Business Administration, which is fully accredited by the AACSB International.</p>
+                <p><b>Mission:</b>Provide experiential business education focusing on coastal community needs and preparing global leaders</p>
+                <button class="learn-button" onclick="closePopup('businessPopup')">
+                    Close
+                </button>
             </div>
         </div>
-    </nav>
 
-
-    <!-- HERO -->
-
-    <section class="programs-hero">
-
-        <div class="programs-hero-text">
-
-            <h1>Academic Programs</h1>
-
-            <p>
-                Find your passion. Build your future.
-            </p>
-
+        <!-- EDUCATION POPUP -->
+        <div class="popup" id="educationPopup">
+            <div class="popup-content">
+                <button class="close-button" onclick="closePopup('educationPopup')">
+                    &times;
+                </button>
+                <h2>Education</h2>
+                <p>Coastal Carolina University offers educator preparation programs through the Spadoni College of Education and Social Sciences.</p>
+                <p><b>Mission:</b>Prepare inclusive, reflective educator practitioners via NCATE/CAEP accredited programs.</p>
+                <button class="learn-button" onclick="closePopup('educationPopup')">
+                    Close
+                </button>
+            </div>
         </div>
 
-    </section>
-
-
-    <!-- PROGRAM CARDS -->
-
-    <section class="programs-section">
-
-        <h2>Explore Our Programs</h2>
-
-
-        <div class="row g-4">
-
-            <!-- BUSINESS -->
-
-            <div class="col-12 col-md-6 col-lg-4">
-
-                <div class="program-card">
-
-                    <img src="programs/business.jpeg" alt="Business">
-
-                    <h3>Business</h3>
-
-                    <button class="learn-button" onclick="openPopup('businessPopup')">
-                        Learn More
-                    </button>
-
-                </div>
-
+        <!-- SCIENCE POPUP -->
+        <div class="popup" id="sciencePopup">
+            <div class="popup-content">
+                <button class="close-button" onclick="closePopup('sciencePopup')">
+                    &times;
+                </button>
+                <h2>Science & Mathematics</h2>
+                <p>The Gupta College of Science and Engineering at Coastal Carolina University is the premier destination for a comprehensive STEM education rooted in a liberal arts core.</p>
+                <p><b>Mission:</b>Preparing inclusive, reflective educator practitioners through accredited programs.</p>
+                <button class="learn-button" onclick="closePopup('sciencePopup')">
+                    Close
+                </button>
             </div>
-
-
-            <!-- EDUCATION -->
-
-            <div class="col-12 col-md-6 col-lg-4">
-
-                <div class="program-card">
-
-                    <img src="programs/education.jpeg" alt="Education">
-
-                    <h3>Education</h3>
-
-                    <button class="learn-button" onclick="openPopup('educationPopup')">
-                        Learn More
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- SCIENCE -->
-
-            <div class="col-12 col-md-6 col-lg-4">
-
-                <div class="program-card">
-
-                    <img src="programs/science.jpeg" alt="Science">
-
-                    <h3>Science & Mathematics</h3>
-
-                    <button class="learn-button" onclick="openPopup('sciencePopup')">
-                        Learn More
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- HEALTH -->
-
-            <div class="col-12 col-md-6 col-lg-4">
-
-                <div class="program-card">
-
-                    <img src="programs/health.jpeg" alt="Health and Human Services">
-
-                    <h3>Health & Human Services</h3>
-
-                    <button class="learn-button" onclick="openPopup('healthPopup')">
-                        Learn More
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- COMPUTER SCIENCE -->
-
-            <div class="col-12 col-md-6 col-lg-4">
-
-                <div class="program-card">
-
-                    <img src="programs/computer-science.jpeg" alt="Computer Science">
-
-                    <h3>Computer Science</h3>
-
-                    <button class="learn-button" onclick="openPopup('computerPopup')">
-                        Learn More
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- SPORTS MANAGEMENT -->
-
-            <div class="col-12 col-md-6 col-lg-4">
-
-                <div class="program-card">
-
-                    <img src="programs/sports-management.jpeg" alt="Sports Management">
-
-                    <h3>Recreation & Sport Management</h3>
-
-                    <button class="learn-button" onclick="openPopup('sportsManagementPopup')">
-                        Learn More
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- ARTS -->
-
-            <div class="col-12 col-md-6 col-lg-4">
-
-                <div class="program-card">
-
-                    <img src="programs/arts.jpeg" alt="Arts and Humanities">
-
-                    <h3>Arts & Humanities</h3>
-
-                    <button class="learn-button" onclick="openPopup('artsPopup')">
-                        Learn More
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- NURSING -->
-
-            <div class="col-12 col-md-6 col-lg-4">
-
-                <div class="program-card">
-
-                    <img src="programs/nursing.jpeg" alt="Nursing">
-
-                    <h3>Nursing & Healthcare</h3>
-
-                    <button class="learn-button" onclick="openPopup('nursingPopup')">
-                        Learn More
-                    </button>
-
-                </div>
-
-            </div>
-
-            <!-- FINANCING -->
-
-            <div class="col-12 col-md-6 col-lg-4">
-
-                <div class="program-card">
-
-                    <img src="programs/finance.jpeg" alt="Financing and Financial Aid">
-
-                    <h3>Financing </h3>
-
-                    <button class="learn-button" onclick="openPopup('financingPopup')">
-                        Learn More
-                    </button>
-
-                </div>
-
-            </div>
-
         </div>
 
-    </section>
-
-
-
-    <!-- BUSINESS POPUP -->
-
-    <div class="popup" id="businessPopup">
-
-        <div class="popup-content">
-
-            <button class="close-button" onclick="closePopup('businessPopup')">
-                &times;
-            </button>
-
-            <h2>Business</h2>
-
-            <p>
-                Business programs can help students develop skills
-                in management, marketing, finance, and entrepreneurship.
-            </p>
-
-            <button class="learn-button" onclick="closePopup('businessPopup')">
-                Close
-            </button>
-
+        <!-- HEALTH POPUP -->
+        <div class="popup" id="healthPopup">
+            <div class="popup-content">
+                <button class="close-button" onclick="closePopup('healthPopup')">
+                    &times;
+                </button>
+                <h2>Health & Human Services</h2>
+                <p>Coastal Carolina University offers undergraduate and graduate degree programs in health and human services through the Conway Medical Center College of Health and Human Performance.</p>
+                <p><b>Mission:</b>Personify education via the teacher-scholar model to enhance professional growth, offer rigorous programs, and inspire innovators in collaboration with the community.</p>
+                <button class="learn-button" onclick="closePopup('healthPopup')">
+                    Close
+                </button>
+            </div>
         </div>
+
+        <!-- COMPUTER POPUP -->
+        <div class="popup" id="computerPopup">
+            <div class="popup-content">
+                <button class="close-button" onclick="closePopup('computerPopup')">
+                    &times;
+                </button>
+                <h2>Computer Science</h2>
+                <p>The Department of Computing Sciences at Coastal Carolina University offers a Bachelor of Science in Computer Science focused on theory, advanced mathematics, applied software, parallel systems, and algorithms.</p>
+                <p><b>Mission:</b>The computing department is to prepare students for careers and graduate studies through a student-centered, ethical learning environment. It focuses on adapting to rapid technological changes while supporting computing education across all university majors.</p>
+                <button class="learn-button" onclick="closePopup('computerPopup')">
+                    Close
+                </button>
+            </div>
+        </div>
+
+        <!-- SPORTS MANAGEMENT POPUP -->
+        <div class="popup" id="sportsManagementPopup">
+            <div class="popup-content">
+                <button class="close-button" onclick="closePopup('sportsManagementPopup')">
+                    &times;
+                </button>
+                <h2>Recreation & Sport Management</h2>
+                <p>The Department of Recreation and Sport Management at Coastal Carolina University offers academic programs designed to develop foundational skills, knowledge, and practical experience for professional careers or graduate studies in high-demand sport and recreation fields.</p>
+                <p><b>Mission:</b>Prepare knowledgeable, effective, and critically thinking entry-level professionals through classroom theory, community-based experiential learning, collaborative research, and internships.</p>
+                <button class="learn-button" onclick="closePopup('sportsManagementPopup')">
+                    Close
+                </button>
+            </div>
+        </div>
+
+        <!-- ARTS POPUP -->
+        <div class="popup" id="artsPopup">
+            <div class="popup-content">
+                <button class="close-button" onclick="closePopup('artsPopup')">
+                    &times;
+                </button>
+                <h2>Arts & Humanities</h2>
+                <p>
+                    Arts and humanities programs give students opportunities
+                    to explore creativity, culture, writing, and communication.
+                </p>
+                <button class="learn-button" onclick="closePopup('artsPopup')">
+                    Close
+                </button>
+            </div>
+        </div>
+
+        <!-- NURSING POPUP -->
+        <div class="popup" id="nursingPopup">
+            <div class="popup-content">
+                <button class="close-button" onclick="closePopup('nursingPopup')">
+                    &times;
+                </button>
+                <h2>Nursing & Healthcare</h2>
+                <p>
+                    Healthcare programs help prepare students for careers
+                    focused on caring for and helping others.
+                </p>
+                <button class="learn-button" onclick="closePopup('nursingPopup')">
+                    Close
+                </button>
+            </div>
+        </div>
+
+        <!-- FINANCING POPUP -->
+        <div class="popup" id="financingPopup">
+            <div class="popup-content">
+                <button class="close-button" onclick="closePopup('financingPopup')">
+                    &times;
+                </button>
+                <h2>Financing</h2>
+                <p>
+                    Finance students study banking, investment management, capital budgeting, and funds management.
+                    Finance can be called both the art of and science of managing money. All areas of the economy,
+                    businesses, nonprofit institutions, or government agencies, have financial issues to be managed.
+
+                    Finance majors graduate with a Bachelor of Science in Business Administration (B.S.B.A.). They are
+                    prepared to pursue careers as financial analysts, stockbrokers, investment bankers, financial
+                    planners, research analysts, financial managers, and bankers.
+                </p>
+                <button class="learn-button" onclick="closePopup('financingPopup')">
+                    Close
+                </button>
+            </div>
+        </div>
+
+        <footer>
+            <div>
+                <strong>COASTAL CAROLINA</strong>
+            </div>
+            <p>Conway, South Carolina</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.62737917515!2d-79.01627072429447!3d33.79611937325441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89006d2992e43c5f%3A0x1357c9e22878ce79!2sCoastal%20Carolina%20University!5e0!3m2!1sen!2sus!4v1789730970987!5m2!1sen!2sus"
+                width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <p>Go Chants!</p>
+        </footer>
 
     </div>
 
 
-    <!-- EDUCATION POPUP -->
-
-    <div class="popup" id="educationPopup">
-
-        <div class="popup-content">
-
-            <button class="close-button" onclick="closePopup('educationPopup')">
-                &times;
-            </button>
-
-            <h2>Education</h2>
-
-            <p>
-                Education programs prepare students for careers
-                working with children, students, schools, and communities.
-            </p>
-
-            <button class="learn-button" onclick="closePopup('educationPopup')">
-                Close
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- SCIENCE POPUP -->
-
-    <div class="popup" id="sciencePopup">
-
-        <div class="popup-content">
-
-            <button class="close-button" onclick="closePopup('sciencePopup')">
-                &times;
-            </button>
-
-            <h2>Science & Mathematics</h2>
-
-            <p>
-                Students can explore science and mathematics through
-                classes, research, and hands-on learning.
-            </p>
-
-            <button class="learn-button" onclick="closePopup('sciencePopup')">
-                Close
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- HEALTH POPUP -->
-
-    <div class="popup" id="healthPopup">
-
-        <div class="popup-content">
-
-            <button class="close-button" onclick="closePopup('healthPopup')">
-                &times;
-            </button>
-
-            <h2>Health & Human Services</h2>
-
-            <p>
-                These programs focus on helping people and communities
-                through health, human services, and related careers.
-            </p>
-
-            <button class="learn-button" onclick="closePopup('healthPopup')">
-                Close
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- COMPUTER POPUP -->
-
-    <div class="popup" id="computerPopup">
-
-        <div class="popup-content">
-
-            <button class="close-button" onclick="closePopup('computerPopup')">
-                &times;
-            </button>
-
-            <h2>Computer Science</h2>
-
-            <p>
-                Computer science students learn about programming,
-                technology, software, and computer systems.
-            </p>
-
-            <button class="learn-button" onclick="closePopup('computerPopup')">
-                Close
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- SPORTS MANAGEMENT POPUP -->
-
-    <div class="popup" id="sportsManagementPopup">
-
-        <div class="popup-content">
-
-            <button class="close-button" onclick="closePopup('sportsManagementPopup')">
-                &times;
-            </button>
-
-            <h2>Recreation & Sport Management</h2>
-
-            <p>
-                Students can learn about sports, recreation,
-                management, marketing, and event planning.
-            </p>
-
-            <button class="learn-button" onclick="closePopup('sportsManagementPopup')">
-                Close
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- ARTS POPUP -->
-
-    <div class="popup" id="artsPopup">
-
-        <div class="popup-content">
-
-            <button class="close-button" onclick="closePopup('artsPopup')">
-                &times;
-            </button>
-
-            <h2>Arts & Humanities</h2>
-
-            <p>
-                Arts and humanities programs give students opportunities
-                to explore creativity, culture, writing, and communication.
-            </p>
-
-            <button class="learn-button" onclick="closePopup('artsPopup')">
-                Close
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- NURSING POPUP -->
-
-    <div class="popup" id="nursingPopup">
-
-        <div class="popup-content">
-
-            <button class="close-button" onclick="closePopup('nursingPopup')">
-                &times;
-            </button>
-
-            <h2>Nursing & Healthcare</h2>
-
-            <p>
-                Healthcare programs help prepare students for careers
-                focused on caring for and helping others.
-            </p>
-
-            <button class="learn-button" onclick="closePopup('nursingPopup')">
-                Close
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- FINANCING POPUP -->
-
-    <div class="popup" id="financingPopup">
-
-        <div class="popup-content">
-
-            <button class="close-button" onclick="closePopup('financingPopup')">
-                &times;
-            </button>
-
-            <h2>Financing</h2>
-
-            <p>
-                Finance students study banking, investment management, capital budgeting, and funds management. Finance can be called both the art of and science of managing money. All areas of the economy, businesses, nonprofit institutions, or government agencies, have financial issues to be managed. 
-
-Finance majors graduate with a Bachelor of Science in Business Administration (B.S.B.A.). They are prepared to pursue careers as financial analysts, stockbrokers, investment bankers, financial planners, research analysts, financial managers, and bankers. 
-            </p>
-
-            <button class="learn-button" onclick="closePopup('financingPopup')">
-                Close
-            </button>
-
-        </div>
-
-        
-    </div>
-
-
-  <footer>
-        <div>
-            <strong>COASTAL CAROLINA</strong>
-        </div>
-        <p>Conway, South Carolina</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.62737917515!2d-79.01627072429447!3d33.79611937325441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89006d2992e43c5f%3A0x1357c9e22878ce79!2sCoastal%20Carolina%20University!5e0!3m2!1sen!2sus!4v1789730970987!5m2!1sen!2sus" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        <p>Go Chants!</p>
-    </footer>
-
-</div>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>

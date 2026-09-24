@@ -477,6 +477,13 @@ body {
   height: 200px;
   margin: 10px;
   object-fit: cover;
+  object-position: center 15%;
+}
+
+.sports-card .football-image,
+.sports-card .volleyball-image,
+.sports-card .golf-image {
+  object-position: center 30%;
 }
 
 .sports-card h3 {
